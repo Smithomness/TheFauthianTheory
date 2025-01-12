@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="The Fauthian Theory.css" rel="stylesheet">
+	<title>The Fauthian Theory</title>
+</head>
+<body>
+    <!-- Background -->
+     <div class="background" style="z-index: -1;"><img src="Images/pic1.jpg"></div>
+    <!-- Main Header -->
+    <header><span class="auto-type"></span></header>
+    <!-- Navigation Bar --> 
+    <nav class="navbar">  
+        <a href="The Fauthian Theory.html">Home</a>                             
+        <a href="Podcast.html">Podcasts</a>
+        <a href="Merchandise.html">Merchandise</a>
+        <a href="#">Contact</a> 
+        <a href="#">Donate</a>
+    </nav>
+    <!-- Quote Section -->
+    <div class="quotes">
+        <h1></h1>
+        <p>"He who takes no bullshit, becometh the bullshit himself."</p>
+    </div>
+    <!-- Info -->
+    <div class="container2">
+        <p><span class="auto-type2"></span></p>
+    </div>
+    <!-- Form Section -->
+    <!-- Form -->
+    <Section class="home">
+        <h2> Join The Collective</h2>
+        <div class="home-content">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <label for="number">Phone Number</label><br>
+                <input type="text" id="number" name="number" value=""><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </Section> 
+    <!-- Podcast Previews -->
+    <div class="soundbites">
+        <h class="ppheader">Podcast Previews</h>
+        <audio controls>
+            <source src="Audio/Nastalgia.wav" type="audio/wav">
+        </audio>
+        <audio controls>
+            <source src="Audio/Nastalgia.wav" type="audio/wav">
+        </audio>
+        <audio controls>
+            <source src="Audio/Nastalgia.wav" type="audio/wav">
+        </audio>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["The Fauthian Theory."],
+            typeSpeed: 110
+        })
+
+        var typed = new Typed(".auto-type2",{
+            strings: ["The Fauthian Theory is simply the theory of compassion and the study of its role and effects in our world. How it may relate to culture, politics, and society as a whole. Wheteher you believe in it's neccesity or not; we simply want to have the discussion, share ideas, and inspire critical thought."],
+            typeSpeed: 5
+        })
+    </script>
+       
+</body>
+</html>

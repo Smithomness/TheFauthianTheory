@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background: border-box;
+}
+body {
+  background: #333;
+}
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 6vw;
+  color: white;
+}
+/* Nav Bar */
+/*Style-Color & Font*/
+.navbar a {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 50px;
+  transition: 1s; /* <--- Coloring effect timing*/
+  z-index: 1;
+}
+/*Position*/
+/* Nav Bar */
+/*Style-Color & Font*/
+.navbar a {
+  font-size: 20px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 1s; /* <--- Coloring effect timing*/
+  z-index: 1;
+}
+/*Position*/
+.navbar {
+  padding-left: 300px;
+  top: 100px;
+  width: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a:hover,
+.navbar a.active {
+  /* <--- active shows what tab is active*/
+  color: #99fb88;
+  font-size: 20px;
+}
+
+.soundbites {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 37%;
+}
+
+

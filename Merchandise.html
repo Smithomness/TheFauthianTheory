@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Merchandise.css" rel="stylesheet">
+	<title>Merchandise</title>
+</head>
+<body>
+    <!-- Navigation Bar --> 
+     <nav class="navbar"> 
+         <a href="The Fauthian Theory.html">Home</a>                            
+         <a href="Podcast.html">Podcasts</a>
+         <a href="Merchandise.html">Merchandise</a>
+         <a href="#">Contact</a> 
+         <a href="#">Donate</a>        
+     </nav>
+    <!-- Merchndise -->
+    <h class="headerr">Merchandise</h>
+    <div class="gallery-wrap">
+    <img src="Images/right.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="Images/grce front person.png" alt=""></span>
+                <span><img src="Images/grace front.png" alt=""></span>
+                <span><img src="Images/grace back.png" alt=""></span>
+            </div>
+            <div>
+                <span><img src="Images/pinkgraceperson.jpg" alt=""></span>
+                <span><img src="Images/pinkgraceback.jpg" alt=""></span>
+                <span><img src="Images/pinkgracefront.jpg" alt=""></span>
+            </div>
+        </div>
+        <img src="Images/right.png" id="nextBtn">
+    </div>
+    <!-- Gallery Script -->
+    <script>
+        // Gallery 1
+	    let scrollContainer = document.querySelector(".gallery");
+	    let backBtn = document.getElementById("backBtn");
+	    let nextBtn = document.getElementById("nextBtn");
+
+        // Gallery 1
+	    scrollContainer.addEventListener("wheel", (evt) => {
+		    evt.preventDefault();
+		    scrollContainer.scrollLeft += evt.deltaY;
+	    });
+	    nextBtn.addEventListener("click", ()=>{
+    	    scrollContainer.scrollLeft += 900;
+	    });
+	    backBtn.addEventListener("click", ()=>{
+    	    scrollContainer.scrollLeft -= 900;
+	    });
+
+    </script>
+
+</body>
+</html>
