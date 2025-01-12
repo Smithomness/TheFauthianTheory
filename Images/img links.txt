@@ -1,0 +1,61 @@
+
+pic 1
+https://www.freepik.com/free-photo/diverse-community-with-hands-circle_15669889.htm#fromView=search&page=1&position=41&uuid=65cdc4d2-9f8c-4246-9558-745665a670d0&new_detail=true
+
+
+pic 2
+https://www.freepik.com/free-photo/business-teamwork-join-hands-together-business-teamwork-concept_1185949.htm#fromView=search&page=1&position=43&uuid=65cdc4d2-9f8c-4246-9558-745665a670d0&new_detail=true
+
+pic 3
+https://www.freepik.com/free-photo/medium-shot-friends-outdoors_13662704.htm#fromView=search&page=1&position=33&uuid=bf481da8-ca7b-4963-8628-cbf58c061ded&new_detail=true
+
+pic 4
+https://www.freepik.com/free-photo/trans-person-working-office-with-colleagues_22894972.htm#fromView=keyword&page=15&position=1&uuid=042714fc-56b6-476b-b0dd-7279d3d7bff7&new_detail=true
+
+CODE
+
+
+ <!------- Slide Show Background ---------->
+<div class="slideshow-container">     
+    <div class="mySlides fade">
+      <img src="Images/pic1.jpg" style="width:100%; height:900px;">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="Images/pic2.jpg" style="width:100%; height: 900px;">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="Images/pic3.jpg" style="width:100%; height:900px;">
+      <div class="text"></div>
+    </div>
+
+  </div>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+  <!--------------- Slide Show Script ---------------->
+  <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 7000); // Currently set to change image every 7 seconds
+      }
+  </script>
