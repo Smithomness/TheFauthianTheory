@@ -6,15 +6,24 @@
 }
 
 body {
-  background: #333;
+  background: white;
+}
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 6vw;
+  color: black;
+  text-shadow: 2px 2px 2px #333;
+  margin-bottom: 5%;
 }
 
 /* Nav Bar */
 /*Style-Color & Font*/
 .navbar a {
   font-size: 20px;
-  color: #ededed;
+  color: black;
   text-decoration: none;
+  text-shadow: 2px 2px 2px #333;
   font-weight: 500;
   margin-left: 35px;
   transition: 1s; /* <--- Coloring effect timing*/
@@ -23,7 +32,7 @@ body {
 /*Position*/
 .navbar {
   position: absolute;
-  padding-left: 350px;
+  padding-left: 225px;
   top: 100px;
   width: 35px;
   display: flex;
@@ -46,7 +55,7 @@ body {
   text-align: center;
   font-family: "Akronim";
   font-weight: normal;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 2px #333;
   z-index: 1;
 }
@@ -93,4 +102,33 @@ body {
   width: 25px;
   cursor: pointer;
   margin: 40px;
+}
+
+/* Gallery 2 */
+.gallery2 {
+  width: 1000px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery2 div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery2 div img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.gallery2 div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.gallery2::-webkit-scrollbar {
+  display: none;
 }
