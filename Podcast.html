@@ -4,35 +4,85 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Podcast.css">
+        <link rel="stylesheet" href="Podcast.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fontawesome.com/icons/discord?f=brands&s=solid" rel="stylesheet">
 	<title>Podcast</title>
 </head>
 <body>
     <!-- Main Header --> 
-    <header>View Our Podcast</header>
+    <header><span class="auto-type"></span></header>
     <!-- Navigation Bar --> 
     <nav class="navbar"> 
-        <a href="index.html">Home</a>                            
+        <a href="The Fauthian Theory.html">Home</a>  
+        <a href="">About</a>                             
         <a href="Podcast.html">Podcasts</a>
         <a href="Merchandise.html">Merchandise</a>
-        <a href="#">Contact</a> 
+        <a href="what if.html">W.W.Y.D.?</a>
+        <a href="contact.html">Contact</a> 
         <a href="#">Donate</a>        
     </nav>
-    <!-- Podcast Previews -->   
+    <!-- Podcast Clips -->   
     <div class="soundbites">
-        <div>
+        <div class="container">
             <h>Podcast 1</h>
-            <audio controls><source src="Audio/Nastalgia.wav" type="audio/wav"></audio>
+            <br>
+            <audio src="Audio/Nastalgia.wav" controls="true" class="audio-1"></audio>
+            <br>
+            <p>Listen Up!</p>
         </div>
-        <div>
+
+        <div class="container">
             <h>Podcast 2</h>
+            <br>
             <audio controls><source src="Audio/Nastalgia.wav" type="audio/wav"></audio>
         </div>
-        <div>
+        <div class="container">
             <h>Podcast 3</h>
+            <br>
             <audio controls><source src="Audio/Nastalgia.wav" type="audio/wav"></audio>
         </div>
     </div>
-	
+	<!-- Side-Bar Content -->
+    <div class="sidebar">
+        <div class="sidecontent">
+
+            <!-- Stations -->
+            <h1 class="sidebar-headers">Stations</h1>
+            <div class="home-sci2">
+                <a href=""><i class='bx bxl-youtube'></i></a>
+                <a href=""><i class='bx bxl-apple'></i></a>
+                <a href=""><i class='bx bxl-soundcloud'></i></a>
+                <a href=""><i class='bx bxl-spotify'></i></a>
+            </div> 
+            <!-- Socials -->  
+            <h1 class="sidebar-headers">Follow Us</h1>
+            <div class="home-sci">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class="bx bxl-instagram"></i></a>
+	            <a href=""><i class='bx bxl-discord-alt'></i></a>
+            </div>  
+            <!-- NewsLetter -->
+            <div class="signup">
+                <label class="label" for="email">Join News-Letter</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <input class="submit" type="submit" value="SUBMIT">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Auto Type Script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        var typed = new Typed(".auto-type",{
+            strings: ["Podcasts."],
+            typeSpeed: 110
+        })
+
+    </script>
+   
 </body>
 </html>
